@@ -42,7 +42,7 @@ body {
 }
 
 .contenedor-header {
-    width: 23%; /* Ajusta el ancho como un porcentaje del contenedor padre */
+    width: 23%;
     height: min-content;
     background-color: rgba(0, 0, 0, 0.3);
     border-radius: 10px;
@@ -53,9 +53,9 @@ body {
     color: #f4eee4;
     font-family: 'futura';
     overflow: hidden;
-    padding: 15px; /* Espaciado interno */
-    min-width: 150px; /* Mínimo ancho para evitar que sea demasiado pequeño */
-    max-width: 40%; /* Máximo ancho para evitar que crezca demasiado */
+    padding: 15px;
+    min-width: 150px;
+    max-width: 40%;
 }
 
 
@@ -82,11 +82,11 @@ body {
 
 @media (max-width: 600px) {
     .contenedor-header {
-        width: 100%; /* Deja que el contenedor ocupe el 100% del ancho disponible */
-        min-width: 150px; /* Evita que sea demasiado pequeño */
+        width: 100%;
+        min-width: 150px;
         display: flex;
-        justify-content: space-evenly; /* Acomoda las iniciales de forma uniforme */
-        align-items: center; /* Centra verticalmente las iniciales */
+        justify-content: space-evenly;
+        align-items: center;
     }
     .botones-header{
         font-size: 15px;
