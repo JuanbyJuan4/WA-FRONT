@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Prueba Formulario | Maso</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js' defer></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f9f9f9;
+        }
+        form {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            margin: auto;
+        }
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            display: block;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 10px 0 20px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <form action="/guardar-opcion" method="POST">
+        <h2>Formulario de Información</h2>
+        
+        <!-- Cantidad -->
+        <label for="cantidad">Cantidad</label>
+        <input type="number" id="cantidad" name="cantidad" placeholder="Ingrese la cantidad" required>
+        
+        <!-- Fecha -->
+        <label for="fecha">Fecha</label>
+        <input type="date" id="fecha" name="fecha" required>
+        
+        <!-- Concepto -->
+        <label for="concepto">Concepto</label>
+        <textarea id="concepto" name="concepto" rows="4" placeholder="Describa el concepto" required></textarea>
+        
+        <!-- Botón de enviar -->
+        <button type="submit">Guardar</button>
+    </form>
+</body>
+</html>

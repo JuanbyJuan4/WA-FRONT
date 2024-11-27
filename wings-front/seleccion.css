@@ -1,0 +1,121 @@
+@font-face {
+    font-family: 'Bal Regular';
+    src: url('font/bal-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.nombre-franquicia{
+    color: #3d3d38;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    width: 15vw;
+    height: 10vh;
+    transition: all .5s;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 10px;
+    margin-left: 70%;
+}
+.imagen-franquicia{
+    background-color: white;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 10px;
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    transition: transform .3s;
+}
+.imagen-franquicia img{
+    width: 90px;
+    height: 70px;
+}
+.imagen-franquicia:hover{
+    transform: scale(1.1);
+}
+.contenedor-imagen{
+    height: 800px;
+    width: 300px;
+    display: flex;
+    justify-content: flex-end;
+    align-content: top;
+    
+}
+
+.nombre-franquicia:hover{
+    background-color: #e7e2da;
+}
+
+.contenedor-seleccion {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.seleccion-atras{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    justify-content: flex-start;
+    font-family: 'Bal Regular';
+    font-size: 25px;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-left: 15%;
+    margin-bottom: 6%;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-radius: 10px;
+    transition: all .4s;
+}
+.seleccion-atras a{
+    text-decoration: none;
+    color: #2b2d21;
+}
+.seleccion-atras:hover{
+    background-color: #e5dfd7;
+}
+.contenedor-seleccion-botones{
+    height: 900px;
+    width: 500px;
+}
+.contenedor-seleccion-opciones{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 1000px;
+}
+.opcion{
+    background-color: #2b2d21;
+    margin-right: 5%;
+    margin-bottom: 3%;
+    height: fit-content;
+    width: 202px;
+    padding: 2%;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #e7e2da;
+    border-radius: 8px;
+    justify-content: center;
+    display: flex;
+    cursor: pointer;
+    transition: all .3s;
+}
+.opcion:hover{
+    background-color: #afada9;
+}
+.botones-header.activo {
+    background-color: #f4eee4; /* Color de fondo para el activo */
+    color: black;
+    padding-left: 3%;
+    padding-right: 3%;
+}

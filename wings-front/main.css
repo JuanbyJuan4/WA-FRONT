@@ -1,0 +1,124 @@
+@font-face {
+    font-family: 'futur';
+    src: url('./font/futur.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #f4eee4;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+    width: 100%;
+    height: 300px;
+}
+
+.botones {
+    width: 180px;
+    height: auto;
+    aspect-ratio: 1;
+    border-radius: 15px;
+    background-color: white;
+    margin-right: 15px;
+    transition: all .6s ease;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.botones:hover {
+    transform: scale(1.1);
+}
+
+.header {
+    width: 100%;
+    height: 75px;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1%;
+    position: sticky;
+    top: 0%;
+    
+}
+
+.contenedor-header {
+    width: 25%;
+    height: 75px;
+    height: min-content;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    color: #f4eee4;
+    font-family: 'futura';
+    overflow: hidden;
+    min-width: 150px;
+    max-width: 40%;
+    position: relative;
+}
+
+
+.botones-header {
+    margin-right: 0%;
+    margin-left: 5%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    font-size: clamp(10px, 2vw, 14px);
+    white-space: nowrap;
+    overflow: hidden;
+    text-transform: uppercase;
+    position: relative;
+    transition: all .2s;
+    cursor: pointer;
+    padding-left: 0%;
+    padding-right: 0%;
+}
+
+.botones-header:hover {
+    color: black;
+}
+
+.botones-header::after {
+    content: attr(data-nombre);
+    font-family: 'futura';
+    color: inherit;
+}
+
+@media (max-width: 600px) {
+    .contenedor-header {
+        width: 100%; /* Deja que el contenedor ocupe el 100% del ancho disponible */
+        min-width: 150px; /* Evita que sea demasiado pequeño */
+        display: flex;
+        justify-content: space-evenly; /* Acomoda las iniciales de forma uniforme */
+        align-items: center; /* Centra verticalmente las iniciales */
+    }
+    .botones-header{
+        font-size: 15px;
+    }
+    .botones-header::after {
+        content: attr(data-inicial);
+    }
+}
+.logo-maso{
+    display: flex;
+    justify-content: center;
+}
+#logo-maso{
+    transition: transform .4s;
+    transform: scale(.8);
+}
+#logo-maso:hover{
+    transform: scale(.85);
+}
+.imagenes{
+    scale: .8;
+}
